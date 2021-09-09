@@ -8,12 +8,12 @@ namespace GameScene.Animations.GameItems
         [SerializeField] private float endPoint = 0.86f;
         [SerializeField] private float startPoint = -1.13f;
 
-        [SerializeField] private float durationMin;
-        [SerializeField] private float durationMax;
-        [SerializeField] private float delayInMin;
-        [SerializeField] private float delayInMax;
-        [SerializeField] private float delayOutMin;
-        [SerializeField] private float delayOutMax;
+        [SerializeField] private float durationMin = 0.1f;
+        [SerializeField] private float durationMax = 0.3f;
+        [SerializeField] private float delayInMin = 1;
+        [SerializeField] private float delayInMax = 3;
+        [SerializeField] private float delayOutMin = 3;
+        [SerializeField] private float delayOutMax = 5;
 
         private void Start()
         {
@@ -33,7 +33,7 @@ namespace GameScene.Animations.GameItems
                 .SetDelay(Random.Range(delayOutMin, delayOutMax))
                 .OnComplete(() => Destroy(gameObject));
         }
-        
+
         private void BullseyeAnimationSequencesX()
         {
             var inBullseyeSequence = DOTween.Sequence();

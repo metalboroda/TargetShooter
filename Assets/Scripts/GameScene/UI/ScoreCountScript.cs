@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ScoreCountScript : MonoBehaviour
 {
-    [FormerlySerializedAs("ScriptableScoreManager")] public ScriptableScoreManager scriptableScoreManager;
+    public ScriptableScoreManager scriptableScoreManager;
 
     public Text scoreCountText;
     

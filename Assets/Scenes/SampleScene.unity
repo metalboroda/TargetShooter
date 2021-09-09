@@ -216,6 +216,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &365640742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365640744}
+  - component: {fileID: 365640743}
+  m_Layer: 0
+  m_Name: ClickToSpawnEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &365640743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365640742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bab4a20fdec683409a5965af0d907ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 100000, guid: 092aeef3857c50f41ada30e877c781cd, type: 3}
+  Requires: 323
+  Interval: 0
+  Intercept: 0
+  Camera: {fileID: 0}
+  cooldown: 0
+--- !u!4 &365640744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365640742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.2692924, y: 0.069067135, z: 1875.981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &401674779
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +418,7 @@ Transform:
   m_GameObject: {fileID: 490646371}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.5, z: 16.701645}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 425451099}
   m_RootOrder: 0
@@ -594,8 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c9e7b71f1c48d45b5fd68e91f8368a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullseye: {fileID: 6487283077033353013, guid: 3bcb094a1ff11dd47a1f0508105aeb2b,
-    type: 3}
+  bullseye: {fileID: 288235993380095389, guid: ab2f2bef680198a46a12e4d18301d610, type: 3}
   minSpawnTime: 5
   maxSpawnTime: 10
 --- !u!1 &1057477290
@@ -719,7 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c9e7b71f1c48d45b5fd68e91f8368a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullseye: {fileID: 9181474264320800721, guid: b8822f30b6b5a55458220bef011d6578,
+  bullseye: {fileID: 5352955653010094685, guid: b8822f30b6b5a55458220bef011d6578,
     type: 3}
   minSpawnTime: 5
   maxSpawnTime: 10
@@ -883,13 +931,62 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327872949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.912656, y: 3.2934017, z: 249.06152}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 401674780}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1793613320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793613321}
+  - component: {fileID: 1793613322}
+  m_Layer: 0
+  m_Name: OnClickEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1793613321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793613320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1793613322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793613320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bab4a20fdec683409a5965af0d907ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 100000, guid: 9be26cdb99096a04cb84bbc62025af29, type: 3}
+  Requires: 323
+  Interval: 0
+  Intercept: 0
+  Camera: {fileID: 0}
+  cooldown: 0
 --- !u!1 &1854077113
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,6 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c9e7b71f1c48d45b5fd68e91f8368a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullseye: {fileID: 509188502610425846, guid: 5c6f41b528526f049b3bb8de36a2b5bf, type: 3}
+  bullseye: {fileID: 5620268985825023089, guid: 5c6f41b528526f049b3bb8de36a2b5bf,
+    type: 3}
   minSpawnTime: 5
   maxSpawnTime: 10

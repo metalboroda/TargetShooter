@@ -1,13 +1,26 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "ge4xhiukj79xpzcu",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "ge4xhiukj79xpzcu",
+        "name": "com.Boroda.targetShooter",
+        "processId": 24604,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "ge4xhiukj79xpzcu",
+            "name": "com.miui.gallery",
+            "processId": 21054,
+            "exited": false
+        },
+        {
+            "deviceId": "ge4xhiukj79xpzcu",
+            "name": "com.Boroda.targetShooter",
+            "processId": 24604,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
