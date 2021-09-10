@@ -18,7 +18,7 @@ namespace GameScene.Managers
             if (Time.time > nextSpawn)
             {
                 nextSpawn = Time.time + Random.Range(minSpawnRate, maxSpawnRate);
-                randY = Random.Range(-3.0f, 3.0f);
+                randY = Random.Range(-2.5f, 3.0f);
                 whereToSpawn = new Vector2(transform.position.x, randY);
                 Instantiate(target, whereToSpawn, Quaternion.identity);
             }
