@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "ge4xhiukj79xpzcu",
         "name": "com.Boroda.targetShooter",
-        "processId": 24604,
+        "processId": 5130,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,12 @@
             "deviceId": "ge4xhiukj79xpzcu",
             "name": "com.Boroda.targetShooter",
             "processId": 24604,
+            "exited": false
+        },
+        {
+            "deviceId": "ge4xhiukj79xpzcu",
+            "name": "com.Boroda.targetShooter",
+            "processId": 5130,
             "exited": false
         }
     ],

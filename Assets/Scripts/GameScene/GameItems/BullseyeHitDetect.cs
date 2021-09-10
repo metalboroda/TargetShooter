@@ -7,8 +7,11 @@ namespace GameScene.GameItems
 {
     public class BullseyeHitDetect : MonoBehaviour
     {
-        public CircleCollider2D circleCollider2D;
+        // public CircleCollider2D circleCollider2D;
         public ScriptableScoreManager scriptableScoreManager;
+        
+        // Vars
+        [FormerlySerializedAs("ScoreAmount")] [SerializeField] private int scoreAmount = 1;
 
         private void Start()
         {
@@ -32,8 +35,8 @@ namespace GameScene.GameItems
             // Debug.Log("Click");
             // FindObjectOfType<ScoreManagerScript>().AddScore();
             // ScoreManagerScript.Instance.AddScore(5);
-            scriptableScoreManager.AddScore(5);
-            circleCollider2D.enabled = false;
+            scriptableScoreManager.AddScore(scoreAmount);
+            // circleCollider2D.enabled = false;
         }
     }
 }

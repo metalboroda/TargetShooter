@@ -50,14 +50,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\GameScene\Animations\GameItems\Bullseye1Animation.cs" />
-     <Compile Include="Assets\Scripts\GameScene\Animations\GameItems\Bullseye2Animation.cs" />
-     <Compile Include="Assets\Scripts\GameScene\Animations\GameItems\Bullseye3Animation.cs" />
+     <Compile Include="Assets\Scripts\GameScene\Animations\GameItems\BullseyeAnimationX.cs" />
+     <Compile Include="Assets\Scripts\GameScene\Animations\GameItems\BullseyeAnimationY.cs" />
      <Compile Include="Assets\Scripts\GameScene\GameItems\BullseyeHitDetect.cs" />
      <Compile Include="Assets\Scripts\GameScene\Managers\BullseyeSpawnScript.cs" />
      <Compile Include="Assets\Scripts\GameScene\Managers\ScoreManagerScript.cs" />
      <Compile Include="Assets\Scripts\GameScene\Managers\ScriptableScoreManager.cs" />
+     <Compile Include="Assets\Scripts\GameScene\Managers\TargetSpawnScript.cs" />
      <Compile Include="Assets\Scripts\GameScene\UI\ScoreCountScript.cs" />
+     <Compile Include="Assets\Scripts\Settings\FrameRate.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Documents/GitHub/TargetShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
