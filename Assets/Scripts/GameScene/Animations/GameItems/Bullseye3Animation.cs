@@ -5,15 +5,15 @@ namespace GameScene.Animations.GameItems
 {
     public class Bullseye3Animation : MonoBehaviour
     {
-        [SerializeField] private float endPoint = 0.86f;
-        [SerializeField] private float startPoint = -1.13f;
+        [SerializeField] private float endPoint = 7.0f;
+        [SerializeField] private float startPoint = -12.0f;
 
-        [SerializeField] private float durationMin;
-        [SerializeField] private float durationMax;
-        [SerializeField] private float delayInMin;
-        [SerializeField] private float delayInMax;
-        [SerializeField] private float delayOutMin;
-        [SerializeField] private float delayOutMax;
+        [SerializeField] private float durationMin = 0.1f;
+        [SerializeField] private float durationMax = 0.3f;
+        [SerializeField] private float delayInMin = 1.0f;
+        [SerializeField] private float delayInMax = 3.0f;
+        [SerializeField] private float delayOutMin = 3.0f;
+        [SerializeField] private float delayOutMax = 5.0f;
 
         private void Start()
         {

@@ -4781,7 +4781,7 @@ MonoBehaviour:
   StampPaint: 0
   StampShape: {fileID: 2800000, guid: fef0ca7c77c683d4da0b22b25f9ed8ad, type: 3}
   StampColor: {r: 1, g: 1, b: 1, a: 1}
-  StampSize: {x: 0.3, y: 0.3}
+  StampSize: {x: 1, y: 1}
   StampRandomDirection: 1
   Raycast: 1
   RaycastRadius: 1
@@ -4919,7 +4919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694dd02f24b737247a594ec9a2714315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shake: 0.5
+  Shake: 1
 --- !u!1 &126704
 GameObject:
   m_ObjectHideFlags: 0
