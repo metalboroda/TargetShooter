@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GameScene.Managers;
+using GameScene.Managers.Scores;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;

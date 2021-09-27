@@ -6,7 +6,8 @@ namespace Settings
     {
         private void Awake()
         {
-            Application.targetFrameRate = 300;
+            Application.targetFrameRate = 45;
+            Input.multiTouchEnabled = false;
         }
     }
 }

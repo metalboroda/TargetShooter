@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "ge4xhiukj79xpzcu",
         "name": "com.Boroda.targetShooter",
-        "processId": 3324,
+        "processId": 22147,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,24 @@
             "deviceId": "ge4xhiukj79xpzcu",
             "name": "com.Boroda.targetShooter",
             "processId": 3324,
+            "exited": false
+        },
+        {
+            "deviceId": "ge4xhiukj79xpzcu",
+            "name": "com.Boroda.targetShooter",
+            "processId": 30946,
+            "exited": false
+        },
+        {
+            "deviceId": "ge4xhiukj79xpzcu",
+            "name": "com.Boroda.targetShooter",
+            "processId": 791,
+            "exited": false
+        },
+        {
+            "deviceId": "ge4xhiukj79xpzcu",
+            "name": "com.Boroda.targetShooter",
+            "processId": 22147,
             "exited": false
         }
     ],

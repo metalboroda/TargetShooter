@@ -1,24 +1,19 @@
-﻿using System;
-using GameScene.Managers;
+﻿using GameScene.Managers.Scores;
+using GameScene.Managers.Timers;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace GameScene.GameItems
 {
     public class BullseyeHitDetect : MonoBehaviour
     {
-        // public CircleCollider2D circleCollider2D;
+        public CircleCollider2D circleCollider2D;
         public ScriptableScoreManager scriptableScoreManager;
-        
-        // Vars
-        [FormerlySerializedAs("ScoreAmount")] [SerializeField] private int scoreAmount = 1;
+        public ScriptableCountdownTimer scriptableCountdownTimer;
+        public AudioSource hitSound;
 
-        private void Start()
-        {
-            gameObject.GetComponent<CircleCollider2D>();
-        }
+        private int clickCount;
 
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnCollisionEnter2D()
         {
             OnMouseDown();
         }
@@ -33,10 +28,16 @@ namespace GameScene.GameItems
             var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if (hit.collider == null) return;
             // Debug.Log("Click");
-            // FindObjectOfType<ScoreManagerScript>().AddScore();
-            // ScoreManagerScript.Instance.AddScore(5);
-            scriptableScoreManager.AddScore(scoreAmount);
-            // circleCollider2D.enabled = false;
+            scriptableScoreManager.AddScore(5);
+            scriptableCountdownTimer.timeValue += 3;
+            clickCount++;
+            hitSound.pitch = (Random.Range(0.9f, 1.1f));
+            hitSound.Play();
+
+            if (clickCount >= 6 || Time.timeScale <= 0)
+            {
+                circleCollider2D.enabled = false;
+            }
         }
     }
 }
